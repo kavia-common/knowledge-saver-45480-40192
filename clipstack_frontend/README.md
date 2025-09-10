@@ -57,6 +57,15 @@ MVP features:
 4) Run (Expo)
    npm run start
 
+5) Preview in a browser (static web export)
+   # Create a production web build and serve it (useful for CI/nginx previews)
+   npm run preview:web
+   # This runs: npx expo export --platform web --output-dir dist
+   # then serves ./dist on PORT (default 3000)
+
+Environment
+- Copy .env.example to .env and set required variables for Supabase/OpenAI.
+
 ## Building Native Apps
 - This repo uses the Expo managed workflow. The CI environment attempting to run "./gradlew" without prebuild will fail.
 - To build native Android locally:

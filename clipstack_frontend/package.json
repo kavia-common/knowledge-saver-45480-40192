@@ -7,6 +7,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "build:web": "npx expo export --platform web --output-dir dist",
+    "preview:web": "npm run build:web && npx serve -s dist -l ${PORT:-3000}",
     "lint": "eslint .",
     "prebuild:android": "expo prebuild --platform android",
     "build": "echo \"Expo managed workflow: use 'npm run native:android' after prebuild or use EAS Build.\" && exit 0",
@@ -41,6 +43,7 @@
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.3.0",
     "jiti": "^2.5.1",
+    "serve": "^14.2.3",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.40.0"
   },
