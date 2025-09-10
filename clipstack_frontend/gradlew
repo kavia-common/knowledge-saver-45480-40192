@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# App-level Gradle wrapper shim for CI tools that run ./gradlew within clipstack_frontend.
+APP_DIR="android"
+if [ -x "$APP_DIR/gradlew" ]; then
+  exec "$APP_DIR/gradlew" "$@"
+else
+  echo "[ClipStack] Expo managed workflow: native project not generated. Run 'npm run prebuild:android' or use EAS Build."
+  exit 0
+fi

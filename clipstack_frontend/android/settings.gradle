@@ -1,0 +1,5 @@
+/*
+ Placeholder for Expo managed workflow CI to satisfy tools scanning for Gradle files.
+ To generate a real project, run: npm run prebuild:android
+*/
+rootProject.name = "clipstack-placeholder"

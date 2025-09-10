@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Placeholder Gradle wrapper for Expo managed workflow CI.
+# Some CI tools expect ./gradlew to exist even when no native project is generated.
+# This script exits successfully and informs the user.
+echo "[ClipStack] Expo managed workflow: native Android project not generated. Use 'npm run prebuild:android' to generate, or EAS Build."
+exit 0

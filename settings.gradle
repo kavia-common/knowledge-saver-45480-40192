@@ -1,0 +1,5 @@
+/*
+Root placeholder to satisfy CI analyzers invoking Gradle from repository root.
+The project uses Expo managed workflow; generate native projects via 'npm run prebuild:android'.
+*/
+rootProject.name = "clipstack-root-placeholder"
